@@ -1,0 +1,17 @@
+.mainDiv{
+   display: flex;
+
+}
+.totalDiv{
+    width: 30%;
+    background-color:rgb(134, 122, 122);
+    color: white;
+    padding: 20px;
+  
+}
+.cartDiv{
+    width: 70%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
