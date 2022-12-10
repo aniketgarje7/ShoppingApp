@@ -1,0 +1,20 @@
+.navDropMenu{
+    color: white;
+    background-color: rgb(80, 71, 71)
+    
+}
+.goToCart{
+    color: white;
+}
+.textEmpty{
+   color:  white;
+}
+.authModalDiv{
+    /* background-color: rgb(83, 78, 73); */
+}
+.searchInput{
+    outline: none;
+    border-radius: 8px;
+    margin-right: 15px;
+    padding: 8px;
+}

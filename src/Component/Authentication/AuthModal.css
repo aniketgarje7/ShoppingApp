@@ -1,0 +1,17 @@
+#tabHome{
+    padding: 10px !important;
+    margin: 10px;
+}
+.logModal{
+    
+   backdrop-filter: blur(8x);
+   
+}
+.modal-content{
+    color: white;
+    background-color:rgb(82, 77, 77)
+    
+}
+#react-aria5860760337-14-tab-logIn{
+    background-color: rgb(82, 78, 78);
+}

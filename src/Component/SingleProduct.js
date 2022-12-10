@@ -1,20 +1,23 @@
-import React from 'react'
+
 import Col from 'react-bootstrap/Col';
 import {Card,ListGroup,Button} from 'react-bootstrap'
-// import { useSelector,useDispatch } from 'react-redux';
 import { CartContext } from '../Context/context';
-
 import {AiFillStar,AiOutlineStar} from 'react-icons/ai'
+
 
 const SingleProduct = ({single}) => {
  
   const {state:{cart},dispatch} = CartContext()
+
+  
   
   const rating = ()=>{
-    const arr = [...Array(5)]
+   const arr = [...Array(5)]
     return arr.map((_,i)=>{
      return(i>single.rating-1?<AiOutlineStar key={i}/>:<AiFillStar key={i}/>)
     })
+    
+ 
   }
   return (
     <Col style={{margin:'0',padding:'0'}}>
@@ -30,7 +33,7 @@ const SingleProduct = ({single}) => {
       <ListGroup.Item>Rating{rating()}  </ListGroup.Item>
       <ListGroup.Item>{single.delivery<2?'Fast delivery':`${single.delivery} days for delivery`} </ListGroup.Item>
       {cart.some(id=>id.Name===single.Name)?
-      <Button variant='danger' onClick={
+      <Button variant='dark' onClick={
         ()=>dispatch({type:"REMOVE_FROM_CART",payload:{...single}})}>Remove from the cart</Button>:
         <Button variant='primary' onClick={()=>dispatch({type:"ADD_TO_CART",payload:{...single}})}> Add to cart</Button>}
     </ListGroup>

@@ -10,6 +10,16 @@
         
     case 'SETSTATE':
         return {...state,[state.products]:[...action.payload]}
+    case 'FIREBASECART':
+        return {...state,cart:[...state.cart.filter((pr)=>{
+            let  flag = true
+             for(let cr of action.payload){
+                 
+                 if(cr.Name===pr.Name){flag=false}
+             }
+             return flag && pr
+        }),...action.payload]}   
+
     default:{
         return state;
     }
@@ -37,8 +47,10 @@ export const filterReducer  = (state,action)=>{
                 discending:false,
                 fastDelivery:false,
                 stars:0,
-                button:false}
+                query:''}
         }
+        case 'SEARCH':
+            return {...state,query:action.payload}
         default:{
             return state
         }

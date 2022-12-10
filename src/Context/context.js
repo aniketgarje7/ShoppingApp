@@ -1,12 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { createContext } from 'react'
-import { useContext ,useReducer} from 'react'
+import { useContext ,useReducer,useEffect} from 'react'
 import {reducer,filterReducer} from './reducer'
 import {faker} from '@faker-js/faker'
-
+import { onAuthStateChanged } from 'firebase/auth'
+import {auth} from '../firebase'
 
 const cart = createContext()
 const Context = ({children}) => {
+  const [user,setUser] = useState(null)
   faker.seed(100)
   const productArry = [...Array(20)].map(()=>({
     image:faker.image.animals(640,480,true),
@@ -26,10 +28,18 @@ const Context = ({children}) => {
       discending:false,
       fastDelivery:false,
       stars:0,
-      button:true
+      query:''
     })
+
+    useEffect(()=>{
+      onAuthStateChanged(auth,(user)=>{
+        if(user)setUser(user)
+        else setUser(null)
+      })
+   },[setUser])
+    console.log('1')
   return (
-    <cart.Provider value={{state,dispatch,filterState,filterDispatch}} >
+    <cart.Provider value={{state,dispatch,filterState,filterDispatch,user,setUser}} >
         {children}
     </cart.Provider>
   )
