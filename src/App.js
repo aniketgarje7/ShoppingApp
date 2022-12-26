@@ -14,7 +14,7 @@ function App() {
       <NavbarComponent />
       <Routes>
       <Route exact path='/' element={<Home/>}/>
-      <Route path='/ShoppingApp' element={<Home/>}/>
+      <Route path='/shopping_cart' element={<Home/>}/>
       <Route  path='/home' element={<Home/>}/>
       <Route path='/cart' element={<CartComponent/>}/>
       </Routes>
