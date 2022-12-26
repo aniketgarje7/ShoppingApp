@@ -12,21 +12,23 @@ const NavbarComponent = () => {
   const {state:{cart},filterDispatch} = CartContext()
    
   return (
-    <Navbar bg="dark" variant="dark" style={{display:'flex' ,justifyContent:'space-between'}}>
     
-    <Nav >
-      <Navbar.Brand  as={NavLink} to="/">
+    <Navbar  bg="dark" variant="dark" className='navCSS' collapseOnSelect expand="sm">
+    
+    <Nav  >
+      <Navbar.Brand  as={NavLink} to="/" className='brandNav'>
        <BsFillCartCheckFill style={{color:'green'}}/>{' '}
         ShoppingCart App
       </Navbar.Brand>
       
-      <Nav.Link as={NavLink} to='/home'>Home</Nav.Link>
+      <Nav.Link as={NavLink} to='/home' className='navHome'>Home</Nav.Link>
       </Nav>
-
-      <div style={{display:'flex',marginRight:'30px'}}>
+      
+      <div className='jigar'>
+      
         <input placeholder='search product' className='searchInput' onChange={
           (e)=>filterDispatch({type:'SEARCH',payload:e.target.value})}></input>
-      <div style={{marginRight:'10px'}}>
+      <div className='twoCom'>
         <Dropdown>
       <Dropdown.Toggle variant='success'>
           <BsFillCartCheckFill/>
@@ -37,14 +39,15 @@ const NavbarComponent = () => {
           <Dropdown.Item as={NavLink} to='/cart' className='goToCart'>Go to Cart</Dropdown.Item>
           </Dropdown.Menu>
          </Dropdown>
-         </div>
+        
          <div className='authModalDiv'>
          <AuthModal/>
          </div>
          </div>
-     
-       
+         </div>
+         
   </Navbar>
+  
   )
 }
 

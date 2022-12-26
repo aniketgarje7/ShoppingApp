@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 import {Card,ListGroup,Button} from 'react-bootstrap'
 import { CartContext } from '../Context/context';
 import {AiFillStar,AiOutlineStar} from 'react-icons/ai'
-
+import './SingleProduct.css'
 
 const SingleProduct = ({single}) => {
  
@@ -20,6 +20,7 @@ const SingleProduct = ({single}) => {
  
   }
   return (
+    
     <Col style={{margin:'0',padding:'0'}}>
          <Card style={{ width: '14rem', marginBottom:'15px',marginLeft:'12px',height:'23rem' }}>
     <Card.Img variant="top" src={single.image} alt='no image fond' />
@@ -41,6 +42,7 @@ const SingleProduct = ({single}) => {
      
   </Card>
         </Col>
+        
   )
 }
 

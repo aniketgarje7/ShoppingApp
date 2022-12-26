@@ -1,6 +1,7 @@
 .navDropMenu{
     color: white;
     background-color: rgb(80, 71, 71)
+
     
 }
 .goToCart{
@@ -11,10 +12,40 @@
 }
 .authModalDiv{
     /* background-color: rgb(83, 78, 73); */
+
 }
 .searchInput{
     outline: none;
     border-radius: 8px;
-    margin-right: 15px;
+    width: 60%;
     padding: 8px;
+}
+.navCSS{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.threeCom{
+    display: flex;
+    justify-content: space-between;
+}
+.twoCom{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+@media all and (max-width:600px){
+    .navHome{
+        display: none;
+    }
+    .navCSS{
+        display: flex;
+        
+    }
+}
+
+.jigar{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
 }
