@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ShoppingApp/static/css/main.8659a259.css",
-    "main.js": "/ShoppingApp/static/js/main.2c1c53c0.js",
+    "main.css": "/ShoppingApp/static/css/main.3eb9ae8b.css",
+    "main.js": "/ShoppingApp/static/js/main.53dc3fbd.js",
     "index.html": "/ShoppingApp/index.html",
-    "main.8659a259.css.map": "/ShoppingApp/static/css/main.8659a259.css.map",
-    "main.2c1c53c0.js.map": "/ShoppingApp/static/js/main.2c1c53c0.js.map"
+    "main.3eb9ae8b.css.map": "/ShoppingApp/static/css/main.3eb9ae8b.css.map",
+    "main.53dc3fbd.js.map": "/ShoppingApp/static/js/main.53dc3fbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.8659a259.css",
-    "static/js/main.2c1c53c0.js"
+    "static/css/main.3eb9ae8b.css",
+    "static/js/main.53dc3fbd.js"
   ]
 }
