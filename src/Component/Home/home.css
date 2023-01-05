@@ -6,12 +6,3 @@
 .id{
   width: 100%;
 }
-@media screen and (max-width:800px) {
-  .homeRow{
-    width: 60%;
-    margin-right: -50px;
-  }
-  .id{
-    width: 30%;
-  }
-}

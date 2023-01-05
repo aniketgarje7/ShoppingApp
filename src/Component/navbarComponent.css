@@ -34,15 +34,6 @@
     justify-content: space-between;
     width: 20%;
 }
-@media all and (max-width:600px){
-    .navHome{
-        display: none;
-    }
-    .navCSS{
-        display: flex;
-        
-    }
-}
 
 .jigar{
     width: 60%;
