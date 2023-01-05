@@ -2,7 +2,11 @@
   display: flex;
  flex-direction: row;
  position: relative;
+ width: 100%;
 }
 .id{
-  width: 100%;
+  width: 20%;
+}
+.homeRow{
+  width: 80%;
 }

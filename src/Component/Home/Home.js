@@ -50,7 +50,7 @@ const Home = () => {
  return <div className='homeContainer'> 
    <div className='id'>
    <InputCheck /></div>
-   
+ 
    <Row className='homeRow'>
      {productsDummy.map((single,index)=>{
           return <SingleProduct single={single}  key={index}/>
