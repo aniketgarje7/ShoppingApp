@@ -21,8 +21,8 @@ const SingleProduct = ({single}) => {
   }
   return (
     
-    <Col style={{margin:'0',padding:'0'}}>
-         <Card style={{ width: '14rem', marginBottom:'15px',marginLeft:'12px',height:'23rem' }}>
+    <Col style={{margin:'0',padding:'0'}} className='col-lg-3 col-md-4 col-sm-6  col-10 m-4'>
+         <Card >
     <Card.Img variant="top" src={single.image} alt='no image fond' />
    
       

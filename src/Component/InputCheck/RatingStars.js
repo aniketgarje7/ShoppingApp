@@ -5,7 +5,7 @@ const RatingStars = ({ rating, onClick }) => {
   const stars = [1,2,3,4,5];
 
   return (
-    <div>
+    <div className='px-4'>
       {stars.map(star => (
         <span
           key={star}

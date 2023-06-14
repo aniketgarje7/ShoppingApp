@@ -1,8 +1,6 @@
 .filter{
-   
+    min-height: 90.5vh;
     background-color: rgb(84, 78, 71);
-
-    height: 90vh;
     color: white;
 }
 .filters>span{
@@ -12,4 +10,20 @@
 }
 .buttonSpan{
     margin-top:20px;
+}
+.title{
+    font-size: 26px;
+    padding: 10px 25px;
+    color: white;
+}
+
+.bg-website{
+    background-color: rgb(84, 78, 71);
+}
+
+.filter_button{
+    margin: 15px;
+}
+.cursor-pointer{
+    cursor: pointer;
 }

@@ -1,8 +1,12 @@
 .navDropMenu{
     color: white;
-    background-color: rgb(80, 71, 71)
+    background-color: rgb(80, 71, 71) ;
+    width: 20%;
 
-    
+}
+.navbar_main{
+    color: white;
+    background-color: rgb(80, 71, 71)   
 }
 .goToCart{
     color: white;
@@ -17,26 +21,40 @@
 .searchInput{
     outline: none;
     border-radius: 8px;
-    width: 60%;
     padding: 8px;
+}
+
+@media  (min-width:568px){
+    .searchInput{
+        width: 45%;
+    }
 }
 .navCSS{
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
-.threeCom{
-    display: flex;
-    justify-content: space-between;
-}
-.twoCom{
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-}
+
 
 .jigar{
     width: 60%;
     display: flex;
     justify-content: space-around;
+}
+
+.brandNav{
+    color: white;
+    margin-bottom: 6px;
+}
+
+.navHome{
+    color: white;
+}
+
+#nav_parent > *{
+ margin: 5px;
+}
+
+.offcanvas-body{
+    padding: 0 !important;
 }

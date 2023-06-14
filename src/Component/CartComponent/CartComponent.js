@@ -42,8 +42,8 @@ const CartComponent = () => {
   
   return (
     <>
-      <div className='mainDiv'>
-        <div className='cartDiv'>
+      <div className='mainDiv row'>
+        <div className='cartDiv col-lg-8'>
         {cart.map((singleCart,i)=>(
           
         <div style={{display:'flex',justifyContent:'space-between',alignItems:'center', padding:'20px'}} 
@@ -51,12 +51,12 @@ const CartComponent = () => {
            <img src={singleCart.image} style={{height:'50px',width:'50px',borderRadius:'50%'}} 
            alt='cartImag'></img>
            <span style={{width:'40px'}}>{singleCart.Name}</span>
-           <AiFillDelete onClick={()=>dispatch({type:'REMOVE_FROM_CART',payload:{...singleCart}})}/>
+           <AiFillDelete onClick={()=>dispatch({type:'REMOVE_FROM_CART',payload:{...singleCart}})} style={{cursor:'pointer'}}/>
            <span>${Number(singleCart.price)}</span>
         </div>
          ))}</div>
          
-       <div className='totalDiv'>
+       <div className='totalDiv col-lg-4'>
         <h2>Total: </h2>
         <h3> $ {cart.reduce((t,num)=>t+Number(num.price),0)}</h3>
         <Button onClick={saveCart} variant='dark'>Save Cart</Button>

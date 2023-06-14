@@ -1,17 +1,22 @@
 .mainDiv{
-   display: flex;
+   /* display: flex; */
 
 }
 .totalDiv{
-    width: 30%;
+    /* width: 30%; */
     background-color:rgb(134, 122, 122);
     color: white;
     padding: 20px;
+    /* min-height: 90vh; */
   
 }
 .cartDiv{
-    width: 70%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
+    /* width: 70%; */
+    /* min-height: 90vh; */
+    
 }
+ @media (min-width:992px){
+    .totalDiv{
+    min-height: 90vh;
+    }
+ }

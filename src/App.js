@@ -8,6 +8,7 @@ import CartComponent from './Component/CartComponent/CartComponent';
 
 
 function App() {
+ console.log('2')
   return (
    <BrowserRouter>
       <NavbarComponent />
